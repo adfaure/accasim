@@ -21,9 +21,9 @@ LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
 """
-from accasim.base.simulator_class import hpc_simulator
-from accasim.base.scheduler_class import fifo_sched
-from accasim.base.allocator_class import ff_alloc
+from accasim.base.simulator_class import Simulator as hpc_simulator
+from accasim.base.scheduler_class import FirstInFirstOut as fifo_sched
+from accasim.base.allocator_class import FirstFit as ff_alloc
 
 workload = 'workloads/HPC2N-2002-2.2.1-cln.swf'
 sys_cfg = 'config/HPC2N.config'
